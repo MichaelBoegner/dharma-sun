@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import { Route, withRouter } from 'react-router-dom';
 import NavBar from './components/statics/NavBar';
 import styled from 'styled-components';
+import Header from './components/statics/Header';
+import Landing from './components/routes/Landing';
+import Mindfulness from './components/routes/Mindfulness'
+import Contact from './components/routes/Contact'
 
 const AppMain=styled.div``;
 
@@ -100,15 +104,7 @@ class App extends Component {
                 )}
               />
 
-              <Route 
-                exact path="/projects"
-                render={props => (
-                  
-                  <Projects
-                    {...props}
-                  />
-                )}
-              />
+
 
               <Route 
                   exact path="/mindfulness"
@@ -120,15 +116,6 @@ class App extends Component {
                   )}
                 />
 
-              <Route 
-                exact path="/writing"
-                render={props => (
-                  
-                  <Writing
-                    {...props}
-                  />
-                )}
-              />
 
               <Route 
                 exact path="/contact"

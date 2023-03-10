@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import portfoliopic from '../../images/portfoliopic.JPG';
+
 
 const HeaderMain=styled.div`
 `;
@@ -144,7 +144,6 @@ export default class Header extends Component {
                     <NavBarLinks to="/">
                         <HeaderTopImg>
                                 <ProfileImg 
-                                    src={portfoliopic} 
                                     alt="portfolio pic of Michael Boegner" 
                                     checked={this.props.checked}
                                 />

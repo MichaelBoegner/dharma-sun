@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Switch from "react-switch";
 import styled from "styled-components";
 
 const NavBarMain=styled.div`
@@ -135,17 +134,6 @@ export default class NavBar extends Component {
                     <label htmlFor="normal-switch">
                         <span>FOCUS</span>
                     
-                        <Switch
-                            onChange={this.props.handleChange}
-                            checked={this.props.checked}
-                            id="normal-switch"
-                            uncheckedIcon={false}
-                            checkedIcon={false}
-                            height={18}
-                            width={28}
-                            gameHandler={this.gameHandler}
-                        />
-
                         <span>FUN</span>
                     </label>
                 </NavBarCenter>

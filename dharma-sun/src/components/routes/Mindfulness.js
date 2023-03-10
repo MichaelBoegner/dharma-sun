@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Footer from '../statics/Footer';
-import companyLogo from '../../assets/DharmaSunShrunk.png'
+
 
 const MindfulnessMain=styled.div`
     display: flex;
@@ -186,7 +186,6 @@ export default class Mindfulness extends Component {
             <MindfulnessMain>
                 <MindfulnessBottom>
                     <MindfulnessLogo>
-                        <img src={companyLogo} alt='company logo'></img>
                     </MindfulnessLogo>
                     <MindfulnessQuote>
                         <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Being satisfied with what we already have is a magical golden key to being alive in a full,
